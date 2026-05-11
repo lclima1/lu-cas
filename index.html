@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lucas Correia Lima da Silva</title>
+  <style>
+    :root {
+      --bg: #f7f4ed;
+      --text: #171717;
+      --muted: #6b6257;
+      --line: #c8beb0;
+      --accent: #8b1e1e;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Courier New", Courier, monospace;
+      line-height: 1.55;
+      letter-spacing: -0.02em;
+    }
+
+    .page {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    header {
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 28px;
+      margin-bottom: 48px;
+    }
+
+    .topline {
+      color: var(--muted);
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      font-size: clamp(2.2rem, 6vw, 5rem);
+      line-height: 0.95;
+      margin: 0 0 22px;
+      font-weight: 400;
+      max-width: 820px;
+    }
+
+    .subtitle {
+      max-width: 720px;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    nav {
+      margin-top: 34px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 18px;
+      font-size: 0.95rem;
+    }
+
+    nav a, a {
+      color: var(--text);
+      text-decoration: none;
+      border-bottom: 1px solid var(--accent);
+    }
+
+    nav a:hover, a:hover {
+      color: var(--accent);
+    }
+
+    section {
+      border-bottom: 1px solid var(--line);
+      padding: 38px 0;
+    }
+
+    h2 {
+      font-size: 1rem;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+      margin: 0 0 22px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 30px;
+    }
+
+    .label {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .content p:first-child {
+      margin-top: 0;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      border: 1px solid var(--line);
+      padding: 20px;
+      background: rgba(255,255,255,0.28);
+      min-height: 170px;
+    }
+
+    .card h3 {
+      margin: 0 0 12px;
+      font-weight: 400;
+      font-size: 1.05rem;
+    }
+
+    .card p {
+      color: var(--muted);
+      margin: 0 0 14px;
+      font-size: 0.95rem;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+      margin-top: 0;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    footer {
+      padding-top: 34px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .typebar::after {
+      content: "_";
+      color: var(--accent);
+      animation: blink 1s steps(2, start) infinite;
+    }
+
+    @keyframes blink {
+      0%, 45% { opacity: 1; }
+      46%, 100% { opacity: 0; }
+    }
+
+    @media (max-width: 720px) {
+      .grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+
+      section {
+        padding: 30px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header>
+      <div class="topline">performer / educator / musicologist</div>
+      <h1 class="typebar">Lucas Correia Lima da Silva</h1>
+      <p class="subtitle">
+        Classical guitarist, educator, and musicologist working between performance, pedagogy,
+        critical theory, theology, monetary history, and computational approaches to musical structure.
+      </p>
+      <nav>
+        <a href="#work">Work</a>
+        <a href="#research">Research</a>
+        <a href="#texts">Texts</a>
+        <a href="#apps">Apps</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section id="work" class="grid">
+      <div class="label">01 / profile</div>
+      <div class="content">
+        <p>
+          My work moves across three connected practices: performing, teaching, and writing about music.
+          As a performer, I am interested in sound, form, intensity, and the historical weight carried by
+          musical materials. As an educator, I work with students as developing musicians rather than passive
+          consumers of technique. As a musicologist, I investigate how musical structures register broader
+          transformations in society, economy, and thought.
+        </p>
+      </div>
+    </section>
+
+    <section class="cards" aria-label="career areas">
+      <article class="card">
+        <h3>Performer</h3>
+        <p>
+          Classical guitar, chamber music, interpretation, and the relation between discipline, sound, and artistic form.
+        </p>
+        <a href="#contact">Bookings / collaborations</a>
+      </article>
+
+      <article class="card">
+        <h3>Educator</h3>
+        <p>
+          Guitar pedagogy, artistic seriousness, practice culture, and the formation of musical attention.
+        </p>
+        <a href="#texts">Teaching texts</a>
+      </article>
+
+      <article class="card">
+        <h3>Musicologist</h3>
+        <p>
+          Critical theory, Adorno, Schoenberg, mediation, economic instability, and computational music analysis.
+        </p>
+        <a href="#research">Research areas</a>
+      </article>
+    </section>
+
+    <section id="research" class="grid">
+      <div class="label">02 / research areas</div>
+      <div class="content">
+        <ul>
+          <li>Adorno, Schoenberg, and the erosion of tonal mediation</li>
+          <li>Music, inflation, monetary crisis, and historical systems of trust</li>
+          <li>Triads, serialism, and computational analysis of explicit simultaneities</li>
+          <li>Pedagogy, practice culture, artistic seriousness, and musical discipline</li>
+          <li>Theology, postcolonial narratives, and the construction of the Other</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="texts" class="grid">
+      <div class="label">03 / texts</div>
+      <div class="content">
+        <p>
+          Selected essays, articles, drafts, and conference materials will be published here.
+        </p>
+        <ul>
+          <li><a href="#">Musical and Monetary Vermittlung: Trust, Coherence, and Adorno’s Critique</a></li>
+          <li><a href="#">Schoenberg, Adorno, and the Collapse of Vermittlung</a></li>
+          <li><a href="#">Notes on practice, pedagogy, and artistic seriousness</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="apps" class="grid">
+      <div class="label">04 / apps</div>
+      <div class="content">
+        <p>
+          Small research tools developed to support analytical and musicological work.
+        </p>
+        <ul>
+          <li><a href="https://triad-analysis.streamlit.app" target="_blank" rel="noopener">Triad Analysis App</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="grid">
+      <div class="label">05 / contact</div>
+      <div class="content">
+        <p>
+          For teaching, research, performance, or collaboration inquiries:
+        </p>
+        <p>
+          <a href="mailto:your-email@example.com">your-email@example.com</a>
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Lucas Correia Lima da Silva. Built with GitHub Pages.
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
