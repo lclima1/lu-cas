@@ -10,7 +10,6 @@
       --text: #f5f5f5;
       --muted: #a8a8a8;
       --line: #2a2a2a;
-      --accent: #ffffff;
       --soft: #111111;
     }
 
@@ -123,10 +122,6 @@
       color: var(--text);
     }
 
-    .muted {
-      color: var(--muted);
-    }
-
     .cards {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -184,7 +179,7 @@
 
     .app-frame {
       width: 100%;
-      min-height: 760px;
+      height: 420px;
       border: 1px solid var(--line);
       background: #000;
       margin-top: 20px;
@@ -226,27 +221,32 @@
       }
 
       .app-frame {
-        min-height: 680px;
+        height: 520px;
       }
     }
   </style>
 </head>
+
 <body>
   <main class="page">
     <header>
       <div class="topline">PERFORMER / EDUCATOR / MUSICOLOGIST</div>
+
       <h1 class="typebar">Lucas Correia Lima da Silva</h1>
+
       <p class="subtitle">
         Classical guitarist, educator, and musicologist working between performance, pedagogy,
         critical theory, monetary history, and computational approaches to musical analysis.
       </p>
+
       <nav>
         <a href="#profile">Profile</a>
         <a href="#performance">Performance</a>
         <a href="#education">Education</a>
+        <a href="#musicology">Musicology</a>
         <a href="#research">Research</a>
         <a href="#texts">Texts</a>
-        <a href="#apps">Apps</a>
+        <a href="#app">App</a>
         <a href="#videos">Videos</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -256,11 +256,12 @@
       <div class="label">01 / profile</div>
       <div class="content">
         <p>
-          My work moves across three connected practices: performing, teaching, and writing about music.
-          As a performer, I am interested in sound, form, intensity, and the historical weight carried by
-          musical materials. As an educator, I work with students as developing musicians rather than passive
-          consumers of technique. As a musicologist, I investigate how music registers broader transformations
-          in society, economy, and thought.
+          Since the age of 8, I have been playing the guitar. My work today moves across
+          three connected practices: performing, teaching, and musicological research.
+          As a performer, I aim to create honest and direct musical experiences with the public.
+          As an educator, I focus on helping students develop confidence, autonomy, and long-term
+          musical growth. As a researcher, I investigate how music registers broader historical,
+          cultural, and economic transformations.
         </p>
       </div>
     </section>
@@ -269,8 +270,8 @@
       <article class="card" id="performance">
         <h3>Performer</h3>
         <p>
-          Classical guitarist trained at the Mozarteum in Salzburg with Marco Tamayo, with further artistic
-          influence from major guitarists including Fabio Zanon and Elena Casoli.
+          Classical guitarist trained at the Mozarteum in Salzburg with Marco Tamayo, with further
+          artistic influence from major guitarists including Fabio Zanon and Elena Casoli.
         </p>
         <a href="#videos">Watch videos</a>
       </article>
@@ -278,42 +279,94 @@
       <article class="card" id="education">
         <h3>Educator</h3>
         <p>
-          Guitar teacher at Musikschule Steinhausen, with a Master’s degree in Music Pedagogy from the
-          Hochschule der Künste Bern. My teaching is informed by constructivist pedagogy, with inspiration
-          from Albert Bandura and Paulo Freire.
+          Guitar teacher at Musikschule Steinhausen, with a Master’s degree in Music Pedagogy from
+          the Hochschule der Künste Bern. My teaching is informed by constructivist pedagogy,
+          Bandura’s concept of self-efficacy, and Paulo Freire’s understanding of education as a
+          shared process of formation.
         </p>
         <a href="#contact">Teaching inquiries</a>
       </article>
 
-      <article class="card">
+      <article class="card" id="musicology">
         <h3>Musicologist</h3>
         <p>
-          Research on Adorno, Schoenberg, tonal mediation, monetary instability, trust, coherence, and
-          computational approaches to musical analysis.
+          Research on Adorno, Schoenberg, tonal mediation, monetary instability, trust, coherence,
+          and computational approaches to music analysis.
         </p>
         <a href="#texts">Read texts</a>
       </article>
     </section>
 
+    <section class="grid">
+      <div class="label">02 / performance</div>
+      <div class="content">
+        <p>
+          I began learning songs from my father and soon fell in love with the classical guitar.
+          At the Conservatório Federal de Pelotas in Brazil, I studied music theory and guitar
+          performance with Prof. Maurício Machado Nunes. Later, I studied with Prof. Luiz Cláudio
+          Ribas Ferreira in Curitiba, completed an exchange year in Colombia, and returned to Brazil
+          to study Music at the Universidade Federal do Rio Grande do Sul, where I was assisted by
+          Prof. Paulo Inda and Prof. Marcos Araújo.
+        </p>
+
+        <p>
+          During this period, I also took private lessons with Prof. Fabio Zanon and participated in
+          festivals and competitions across South America. I received several prizes, including 3rd
+          prize at the Peru International Guitar Competition in 2015, 1st prize at the Uruguay
+          International Guitar Competition in 2015, and the Guitar Coop Award in 2017.
+        </p>
+
+        <p>
+          My repertoire includes solo and chamber music by composers from different centuries and
+          countries, including Johann Sebastian Bach, Franz Schubert, Mauro Giuliani, Luigi Legnani,
+          and composers from Latin America and Europe.
+        </p>
+      </div>
+    </section>
+
+    <section class="grid">
+      <div class="label">03 / education</div>
+      <div class="content">
+        <p>
+          My teaching focuses on technical clarity, musical imagination, and student autonomy. I work
+          with score reading, tablature, chords, harmony, counterpoint, arpeggios, scales, systematic
+          technique, body awareness, sight-reading, performance training, and ear training.
+        </p>
+
+        <p>
+          My pedagogical research explores how technology can connect music schools across different
+          countries, creating spaces for intercultural learning, teacher exchange, and student motivation.
+          This approach is shaped by social learning theory, the development of self-efficacy, and the
+          belief that students learn not only from instruction, but also by observing, collaborating, and
+          performing.
+        </p>
+
+        <p>
+          Online lessons are available by request. Please contact me directly for availability and format.
+        </p>
+      </div>
+    </section>
+
     <section id="research" class="grid">
-      <div class="label">02 / research areas</div>
+      <div class="label">04 / research areas</div>
       <div class="content">
         <ul>
           <li>Adorno’s concept of <em>Vermittlung</em> and the erosion of tonal mediation</li>
           <li>Schoenberg, triadic presence, serialism, and explicit onset simultaneities</li>
           <li>Music, monetary instability, inflation, trust, and historical systems of coherence</li>
-          <li>Computational musicology as a tool for making structural change visible</li>
-          <li>Music pedagogy, practice culture, artistic seriousness, and musical discipline</li>
+          <li>Computational analysis of musical structures and explicit simultaneities</li>
+          <li>Remote music education, intercultural learning, and the development of self-efficacy</li>
         </ul>
       </div>
     </section>
 
     <section id="texts" class="grid">
-      <div class="label">03 / texts</div>
+      <div class="label">05 / texts</div>
       <div class="content">
         <p>
-          Selected essays, drafts, articles, and conference materials.
+          Selected essays, drafts, articles, and research materials.
         </p>
+
         <ul class="download-list">
           <li>
             <strong>Musical and Monetary Vermittlung:</strong> Trust, Coherence, and Adorno’s Critique
@@ -321,33 +374,45 @@
             <a href="texts/musical-monetary-vermittlung.pdf" target="_blank" rel="noopener">Read PDF</a>
             <a href="texts/musical-monetary-vermittlung.pdf" download>Download</a>
           </li>
+
           <li>
-            <strong>Schoenberg, Adorno, and the Collapse of Vermittlung:</strong> Quantifying the Erosion of Tonal Mediation through Triadic Presence
+            <strong>Schoenberg, Adorno, and the Collapse of Vermittlung:</strong>
+            Quantifying the Erosion of Tonal Mediation through Triadic Presence
             <br />
             <a href="texts/schoenberg-adorno-triadic-presence.pdf" target="_blank" rel="noopener">Read PDF</a>
             <a href="texts/schoenberg-adorno-triadic-presence.pdf" download>Download</a>
           </li>
+
+          <li>
+            <strong>Fernunterricht:</strong>
+            Wie Technologie Musikschulen auf verschiedenen Kontinenten verbinden kann
+            <br />
+            <a href="texts/fernunterricht-musikschulen.pdf" target="_blank" rel="noopener">Read PDF</a>
+            <a href="texts/fernunterricht-musikschulen.pdf" download>Download</a>
+          </li>
         </ul>
-        <p class="muted">
-          To track downloads and visitor location, connect the site to a privacy-respecting analytics tool such as Plausible,
-          GoatCounter, or Google Analytics. GitHub Pages alone does not provide detailed download analytics.
-        </p>
       </div>
     </section>
 
-    <section id="apps" class="grid">
-      <div class="label">04 / app</div>
+    <section id="app" class="grid">
+      <div class="label">06 / app</div>
       <div class="content">
         <h2>Triad Analysis App</h2>
+
         <p>
-          This tool analyses MusicXML files and identifies complete triadic formations under deliberately restricted conditions.
-          It focuses on explicitly simultaneous note events rather than reconstructing functional harmony, voice-leading,
-          or implied tonal relations. The app was developed to support the article on Schoenberg, Adorno, and triadic presence
-          by providing a reproducible way to quantify how often triads appear as articulated events in the score.
+          This tool analyses MusicXML files and identifies complete triadic formations under deliberately
+          restricted conditions. It focuses on explicitly simultaneous note events rather than reconstructing
+          functional harmony, voice-leading, or implied tonal relations. The app was developed to support
+          research on Schoenberg, Adorno, and triadic presence by providing a reproducible way to quantify
+          how often triads appear as articulated events in the score.
         </p>
+
         <p>
-          <a href="https://triad-analysis.streamlit.app" target="_blank" rel="noopener">Open app in a new tab</a>
+          <a href="https://triad-analysis.streamlit.app" target="_blank" rel="noopener">
+            Open app in a new tab
+          </a>
         </p>
+
         <iframe
           class="app-frame"
           src="https://triad-analysis.streamlit.app/?embed=true"
@@ -358,32 +423,39 @@
     </section>
 
     <section id="videos" class="grid">
-      <div class="label">05 / videos</div>
+      <div class="label">07 / videos</div>
       <div class="content">
-        <p>
-          Selected performances and talks. Replace the YouTube IDs below with your own video links.
-        </p>
         <div class="video-grid">
           <div class="video">
-            <iframe src="https://www.youtube.com/embed/ovTUQOPASxs" title="Performance video" allowfullscreen></iframe>
+            <iframe
+              src="https://www.youtube.com/embed/ovTUQOPASxs"
+              title="Performance video"
+              allowfullscreen>
+            </iframe>
             <p>Performance / classical guitar</p>
           </div>
+
           <div class="video">
-            <iframe src="https://www.youtube.com/embed/YOUTUBE_VIDEO_ID_2" title="Research or teaching video" allowfullscreen></iframe>
-            <p>Research / teaching / lecture</p>
+            <iframe
+              src="https://www.youtube.com/embed/rSIVQSgBIxE"
+              title="Performance video"
+              allowfullscreen>
+            </iframe>
+            <p>Performance / classical guitar</p>
           </div>
         </div>
       </div>
     </section>
 
     <section id="contact" class="grid">
-      <div class="label">06 / contact</div>
+      <div class="label">08 / contact</div>
       <div class="content">
         <p>
           For teaching, performance, research, or collaboration inquiries:
         </p>
+
         <p>
-          <a href="mailto:your-email@example.com">your-email@example.com</a>
+          <a href="mailto:correialimalucas@gmail.com">correialimalucas@gmail.com</a>
         </p>
       </div>
     </section>
@@ -398,4 +470,3 @@
   </script>
 </body>
 </html>
-
