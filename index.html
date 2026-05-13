@@ -4,13 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lucas Correia Lima da Silva</title>
+
   <style>
     :root {
       --bg: #000000;
       --text: #f5f5f5;
-      --muted: #a8a8a8;
-      --line: #2a2a2a;
-      --soft: #111111;
+      --muted: #9d9d9d;
+      --line: #232323;
+      --soft: #0d0d0d;
     }
 
     * {
@@ -26,42 +27,42 @@
       background: var(--bg);
       color: var(--text);
       font-family: "Courier New", Courier, monospace;
-      line-height: 1.55;
+      line-height: 1.6;
       letter-spacing: -0.02em;
     }
 
     .page {
       max-width: 1080px;
       margin: 0 auto;
-      padding: 52px 24px 90px;
+      padding: 56px 24px 90px;
     }
 
     header {
       border-bottom: 1px solid var(--line);
-      padding-bottom: 32px;
-      margin-bottom: 48px;
+      padding-bottom: 34px;
+      margin-bottom: 52px;
     }
 
     .topline {
       color: var(--muted);
-      font-size: 0.9rem;
+      font-size: 0.88rem;
       text-transform: uppercase;
-      letter-spacing: 0.1em;
-      margin-bottom: 22px;
+      letter-spacing: 0.14em;
+      margin-bottom: 24px;
     }
 
     h1 {
-      font-size: clamp(2.5rem, 7vw, 5.6rem);
+      font-size: clamp(2.7rem, 7vw, 5.8rem);
       line-height: 0.95;
-      margin: 0 0 26px;
       font-weight: 400;
+      margin: 0 0 26px;
       max-width: 900px;
     }
 
     .subtitle {
-      max-width: 780px;
+      max-width: 760px;
       color: var(--muted);
-      font-size: 1.05rem;
+      font-size: 1.02rem;
     }
 
     nav {
@@ -72,35 +73,22 @@
       font-size: 0.95rem;
     }
 
-    nav a, a {
+    nav a,
+    a {
       color: var(--text);
       text-decoration: none;
       border-bottom: 1px solid var(--text);
     }
 
-    nav a:hover, a:hover {
+    nav a:hover,
+    a:hover {
       color: var(--muted);
       border-bottom-color: var(--muted);
     }
 
     section {
       border-bottom: 1px solid var(--line);
-      padding: 40px 0;
-    }
-
-    h2 {
-      font-size: 1rem;
-      font-weight: 400;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      color: var(--text);
-      margin: 0 0 24px;
-    }
-
-    h3 {
-      margin: 0 0 12px;
-      font-weight: 400;
-      font-size: 1.05rem;
+      padding: 42px 0;
     }
 
     .grid {
@@ -111,15 +99,25 @@
 
     .label {
       color: var(--muted);
-      font-size: 0.95rem;
+      font-size: 0.92rem;
     }
 
     .content p:first-child {
       margin-top: 0;
     }
 
-    .content p {
-      color: var(--text);
+    h2 {
+      margin: 0 0 20px;
+      font-size: 1rem;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    h3 {
+      margin: 0 0 12px;
+      font-weight: 400;
+      font-size: 1.05rem;
     }
 
     .cards {
@@ -130,24 +128,32 @@
 
     .card {
       border: 1px solid var(--line);
-      padding: 22px;
       background: var(--soft);
+      padding: 22px;
       min-height: 190px;
     }
 
     .card p {
       color: var(--muted);
-      margin: 0 0 14px;
+      margin-bottom: 14px;
       font-size: 0.95rem;
     }
 
     ul {
-      padding-left: 1.2rem;
       margin-top: 0;
+      padding-left: 1.2rem;
     }
 
     li {
-      margin-bottom: 9px;
+      margin-bottom: 10px;
+    }
+
+    .download-list li {
+      margin-bottom: 22px;
+    }
+
+    .muted {
+      color: var(--muted);
     }
 
     .video-grid {
@@ -185,10 +191,6 @@
       margin-top: 20px;
     }
 
-    .download-list a {
-      margin-right: 12px;
-    }
-
     footer {
       padding-top: 34px;
       color: var(--muted);
@@ -197,7 +199,6 @@
 
     .typebar::after {
       content: "_";
-      color: var(--text);
       animation: blink 1s steps(2, start) infinite;
     }
 
@@ -229,14 +230,20 @@
 
 <body>
   <main class="page">
-    <header>
-      <div class="topline">PERFORMER / EDUCATOR / MUSICOLOGIST</div>
 
-      <h1 class="typebar">Lucas Correia Lima da Silva</h1>
+    <header>
+      <div class="topline">
+        PERFORMER / EDUCATOR / MUSICOLOGIST
+      </div>
+
+      <h1 class="typebar">
+        Lucas Correia Lima da Silva
+      </h1>
 
       <p class="subtitle">
-        Classical guitarist, educator, and musicologist working between performance, pedagogy,
-        critical theory, monetary history, and computational approaches to musical analysis.
+        Classical guitarist, educator, and musicologist working between performance,
+        pedagogy, critical theory, monetary history, and computational approaches
+        to musical analysis.
       </p>
 
       <nav>
@@ -254,163 +261,197 @@
 
     <section id="profile" class="grid">
       <div class="label">01 / profile</div>
+
       <div class="content">
         <p>
-          Since the age of 8, I have been playing the guitar. My work today moves across
-          three connected practices: performing, teaching, and musicological research.
-          As a performer, I aim to create honest and direct musical experiences with the public.
-          As an educator, I focus on helping students develop confidence, autonomy, and long-term
-          musical growth. As a researcher, I investigate how music registers broader historical,
-          cultural, and economic transformations.
+          My work moves across three connected practices: performance, teaching,
+          and musicological research. As a performer, I aim to create honest and
+          direct musical experiences with the public. As an educator, I focus on
+          helping students develop confidence, autonomy, and long-term musical
+          growth. As a researcher, I investigate how music registers broader
+          historical, cultural, and economic transformations.
         </p>
       </div>
     </section>
 
-    <section class="cards" aria-label="career areas">
+    <section class="cards">
+
       <article class="card" id="performance">
         <h3>Performer</h3>
+
         <p>
-          Classical guitarist trained at the Mozarteum in Salzburg with Marco Tamayo, with further
-          artistic influence from major guitarists including Fabio Zanon and Elena Casoli.
+          Classical guitarist trained at the Mozarteum in Salzburg with Marco
+          Tamayo, with further artistic influence from Fabio Zanon and Elena Casoli.
         </p>
+
         <a href="#videos">Watch videos</a>
       </article>
 
       <article class="card" id="education">
         <h3>Educator</h3>
+
         <p>
-          Guitar teacher at Musikschule Steinhausen, with a Master’s degree in Music Pedagogy from
-          the Hochschule der Künste Bern. My teaching is informed by constructivist pedagogy,
-          Bandura’s concept of self-efficacy, and Paulo Freire’s understanding of education as a
-          shared process of formation.
+          Guitar teacher at Musikschule Steinhausen with a Master’s degree in
+          Music Pedagogy from the Hochschule der Künste Bern. My teaching is
+          informed by constructivist pedagogy, self-efficacy theory, and
+          collaborative learning.
         </p>
+
         <a href="#contact">Teaching inquiries</a>
       </article>
 
       <article class="card" id="musicology">
         <h3>Musicologist</h3>
+
         <p>
-          Research on Adorno, Schoenberg, tonal mediation, monetary instability, trust, coherence,
-          and computational approaches to music analysis.
+          Research on Adorno, Schoenberg, tonal mediation, monetary instability,
+          trust, coherence, and computational approaches to music analysis.
         </p>
+
         <a href="#texts">Read texts</a>
       </article>
+
     </section>
 
     <section class="grid">
       <div class="label">02 / performance</div>
+
       <div class="content">
+
+<p>
+  I studied music theory and guitar performance at the Conservatório
+  Federal de Pelotas in Brazil with Prof. Maurício Machado Nunes.
+  Later, I studied with Prof. Luiz Cláudio Ribas Ferreira in Curitiba
+  before continuing my musical education at the Universidade Federal
+  do Rio Grande do Sul, where I was assisted by Prof. Paulo Inda
+  and Prof. Marcos Araújo.
+</p>
+
         <p>
-          I began learning songs from my father and soon fell in love with the classical guitar.
-          At the Conservatório Federal de Pelotas in Brazil, I studied music theory and guitar
-          performance with Prof. Maurício Machado Nunes. Later, I studied with Prof. Luiz Cláudio
-          Ribas Ferreira in Curitiba, completed an exchange year in Colombia, and returned to Brazil
-          to study Music at the Universidade Federal do Rio Grande do Sul, where I was assisted by
-          Prof. Paulo Inda and Prof. Marcos Araújo.
+          During this period, I also took private lessons with Prof. Fabio Zanon
+          and participated in festivals and competitions across South America.
+          I received several prizes, including 3rd prize at the Peru International
+          Guitar Competition (2015), 1st prize at the Uruguay International Guitar
+          Competition (2015), and the Guitar Coop Award (2017).
         </p>
 
         <p>
-          During this period, I also took private lessons with Prof. Fabio Zanon and participated in
-          festivals and competitions across South America. I received several prizes, including 3rd
-          prize at the Peru International Guitar Competition in 2015, 1st prize at the Uruguay
-          International Guitar Competition in 2015, and the Guitar Coop Award in 2017.
+          My repertoire includes solo and chamber music by composers from different
+          centuries and countries, including Johann Sebastian Bach, Franz Schubert,
+          Mauro Giuliani, Luigi Legnani, and composers from Latin America and Europe.
         </p>
 
-        <p>
-          My repertoire includes solo and chamber music by composers from different centuries and
-          countries, including Johann Sebastian Bach, Franz Schubert, Mauro Giuliani, Luigi Legnani,
-          and composers from Latin America and Europe.
-        </p>
       </div>
     </section>
 
     <section class="grid">
       <div class="label">03 / education</div>
+
       <div class="content">
+
         <p>
-          My teaching focuses on technical clarity, musical imagination, and student autonomy. I work
-          with score reading, tablature, chords, harmony, counterpoint, arpeggios, scales, systematic
-          technique, body awareness, sight-reading, performance training, and ear training.
+          My teaching focuses on technical clarity, musical imagination, and
+          student autonomy. I work with score reading, tablature, chords,
+          harmony, counterpoint, arpeggios, scales, systematic technique,
+          body awareness, sight-reading, performance training, and ear training.
         </p>
 
         <p>
-          My pedagogical research explores how technology can connect music schools across different
-          countries, creating spaces for intercultural learning, teacher exchange, and student motivation.
-          This approach is shaped by social learning theory, the development of self-efficacy, and the
-          belief that students learn not only from instruction, but also by observing, collaborating, and
-          performing.
+          My pedagogical research explores how technology can connect music schools
+          across different countries, creating spaces for intercultural learning,
+          teacher exchange, and student motivation. This approach is shaped by
+          social learning theory, the development of self-efficacy, and the belief
+          that students learn not only from instruction, but also through observation,
+          collaboration, and performance.
         </p>
 
         <p>
-          Online lessons are available by request. Please contact me directly for availability and format.
+          Online lessons are available by request.
         </p>
+
       </div>
     </section>
 
     <section id="research" class="grid">
       <div class="label">04 / research areas</div>
+
       <div class="content">
         <ul>
-          <li>Adorno’s concept of <em>Vermittlung</em> and the erosion of tonal mediation</li>
-          <li>Schoenberg, triadic presence, serialism, and explicit onset simultaneities</li>
-          <li>Music, monetary instability, inflation, trust, and historical systems of coherence</li>
-          <li>Computational analysis of musical structures and explicit simultaneities</li>
-          <li>Remote music education, intercultural learning, and the development of self-efficacy</li>
+          <li>Adorno’s concept of <em>Vermittlung</em> and tonal mediation</li>
+          <li>Schoenberg, serialism, and triadic presence</li>
+          <li>Music, monetary instability, inflation, and trust</li>
+          <li>Computational analysis of musical structures</li>
+          <li>Remote music education and intercultural learning</li>
         </ul>
       </div>
     </section>
 
     <section id="texts" class="grid">
       <div class="label">05 / texts</div>
+
       <div class="content">
+
         <p>
           Selected essays, drafts, articles, and research materials.
         </p>
 
         <ul class="download-list">
+
           <li>
-            <strong>Musical and Monetary Vermittlung:</strong> Trust, Coherence, and Adorno’s Critique
+            <strong>Musical and Monetary Vermittlung:</strong>
+            Trust, Coherence, and Adorno’s Critique
             <br />
-            <a href="texts/musical-monetary-vermittlung.pdf" target="_blank" rel="noopener">Read PDF</a>
-            <a href="texts/musical-monetary-vermittlung.pdf" download>Download</a>
+            <a href="texts/musical-monetary-vermittlung.pdf"
+               target="_blank"
+               rel="noopener">
+              Read
+            </a>
           </li>
 
           <li>
             <strong>Schoenberg, Adorno, and the Collapse of Vermittlung:</strong>
             Quantifying the Erosion of Tonal Mediation through Triadic Presence
             <br />
-            <a href="texts/schoenberg-adorno-triadic-presence.pdf" target="_blank" rel="noopener">Read PDF</a>
-            <a href="texts/schoenberg-adorno-triadic-presence.pdf" download>Download</a>
+            <a href="texts/schoenberg-adorno-triadic-presence.pdf"
+               target="_blank"
+               rel="noopener">
+              Read
+            </a>
           </li>
 
           <li>
             <strong>Fernunterricht:</strong>
             Wie Technologie Musikschulen auf verschiedenen Kontinenten verbinden kann
             <br />
-            <a href="texts/fernunterricht-musikschulen.pdf" target="_blank" rel="noopener">Read PDF</a>
-            <a href="texts/fernunterricht-musikschulen.pdf" download>Download</a>
+            <a href="texts/fernunterricht-musikschulen.pdf"
+               target="_blank"
+               rel="noopener">
+              Read
+            </a>
           </li>
+
         </ul>
+
+        <p class="muted" style="margin-top: 28px;">
+          For full drafts, conference papers, or unpublished materials,
+          please contact me directly by email.
+        </p>
+
       </div>
     </section>
 
     <section id="app" class="grid">
       <div class="label">06 / app</div>
+
       <div class="content">
-        <h2>Triad Analysis App</h2>
+
+        <h2>Triad Analysis</h2>
 
         <p>
-          This tool analyses MusicXML files and identifies complete triadic formations under deliberately
-          restricted conditions. It focuses on explicitly simultaneous note events rather than reconstructing
-          functional harmony, voice-leading, or implied tonal relations. The app was developed to support
-          research on Schoenberg, Adorno, and triadic presence by providing a reproducible way to quantify
-          how often triads appear as articulated events in the score.
-        </p>
-
-        <p>
-          <a href="https://triad-analysis.streamlit.app" target="_blank" rel="noopener">
-            Open app in a new tab
-          </a>
+          A computational tool developed for the analysis of explicit triadic
+          simultaneities in MusicXML scores. The application was created in
+          connection with research on Schoenberg, Adorno, tonal mediation,
+          and computational approaches to musical analysis.
         </p>
 
         <iframe
@@ -419,19 +460,28 @@
           title="Triad Analysis App"
           loading="lazy">
         </iframe>
+
+        <p class="muted" style="margin-top: 14px;">
+          Built with Python, music21, and Streamlit.
+        </p>
+
       </div>
     </section>
 
     <section id="videos" class="grid">
       <div class="label">07 / videos</div>
+
       <div class="content">
+
         <div class="video-grid">
+
           <div class="video">
             <iframe
               src="https://www.youtube.com/embed/ovTUQOPASxs"
               title="Performance video"
               allowfullscreen>
             </iframe>
+
             <p>Performance / classical guitar</p>
           </div>
 
@@ -441,32 +491,44 @@
               title="Performance video"
               allowfullscreen>
             </iframe>
+
             <p>Performance / classical guitar</p>
           </div>
+
         </div>
+
       </div>
     </section>
 
     <section id="contact" class="grid">
       <div class="label">08 / contact</div>
+
       <div class="content">
+
         <p>
           For teaching, performance, research, or collaboration inquiries:
         </p>
 
         <p>
-          <a href="mailto:correialimalucas@gmail.com">correialimalucas@gmail.com</a>
+          <a href="mailto:correialimalucas@gmail.com">
+            correialimalucas@gmail.com
+          </a>
         </p>
+
       </div>
     </section>
 
     <footer>
-      © <span id="year"></span> Lucas Correia Lima da Silva. Built with GitHub Pages.
+      © <span id="year"></span> Lucas Correia Lima da Silva.
+      Built with GitHub Pages.
     </footer>
+
   </main>
 
   <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
   </script>
+
 </body>
 </html>
