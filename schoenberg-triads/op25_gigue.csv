@@ -1,0 +1,13 @@
+measure,position,quality,inversion,root,bass,pitches,spellings
+15,beat 1 + eighth,major,1,C♭,E♭,E♭4 G♭4 C♭6,"('C♭', 'E♭', 'G♭')"
+15,beat 2 + dotted quarter,diminished,2,E,B♭,B♭3 E5 G5,"('B♭', 'E', 'G')"
+18,beat 2 + eighth,augmented,0,E♭,E♭,E♭2 G4 B4,"('B', 'E♭', 'G')"
+21,beat 2 + quarter,diminished,2,C,G♭,G♭2 C3 E♭3,"('C', 'E♭', 'G♭')"
+39,beat 2,minor,1,F,A♭,A♭2 F3 C4,"('A♭', 'C', 'F')"
+46,beat 3 + eighth,diminished,0,F♯,F♯,F♯3 A3 C4,"('A', 'C', 'F♯')"
+50,beat 1 + eighth,diminished,1,C,E♭,E♭4 G♭4 C5,"('C', 'E♭', 'G♭')"
+62,beat 2 + dotted quarter,minor,2,A♭,E♭,E♭5 A♭5 C♭6,"('A♭', 'C♭', 'E♭')"
+70,beat 4 + eighth,diminished,1,D,F,F1 A♭4 D5,"('A♭', 'D', 'F')"
+73,beat 2 + eighth,minor,0,F,F,F5 A♭5 C6,"('A♭', 'C', 'F')"
+73,beat 4,major,0,A♭,A♭,A♭5 C6 E♭6,"('A♭', 'C', 'E♭')"
+73,beat 5,minor,0,D,D,D6 F6 A6,"('A', 'D', 'F')"

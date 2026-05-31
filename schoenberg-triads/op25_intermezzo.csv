@@ -1,0 +1,3 @@
+measure,position,quality,inversion,root,bass,pitches,spellings
+8,beat 2 + dotted eighth,major,0,C,C,C3 E3 G5,"('C', 'E', 'G')"
+20,beat 1,major,1,G,B,B3 G4 D5 D6,"('B', 'D', 'D', 'G')"
