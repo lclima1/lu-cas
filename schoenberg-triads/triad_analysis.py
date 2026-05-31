@@ -12,10 +12,10 @@ Purpose
 The script analyses MusicXML scores and identifies explicitly articulated
 triadic onset structures.
 
-Only pitches beginning at the same onset are considered. Pitches sustained
+Only pitches beginning at the analysed onset are considered. Pitches sustained
 from previous events are excluded from the triadic evaluation. The analysis
 therefore measures the explicit articulation of triadic structures rather than
-the complete sounding harmonic texture.
+the total triadic character of the accumulated sounding texture.
 
 Accepted triad types
 --------------------
@@ -24,11 +24,11 @@ Accepted triad types
 - Diminished
 - Augmented
 
-Notehead-based comparison
+Notehead-Based Comparison
 -------------------------
 For notehead-based comparisons, the script uses an adjusted notehead count.
 
-Tied continuations are excluded. If the same pitch-octave occurs simultaneously
+Tied continuations are excluded. If the same pitch–octave occurs simultaneously
 in multiple voices, it is counted only once. Octave distinctions are preserved.
 
 Output
@@ -44,8 +44,20 @@ For each analysed score the script reports:
 - Event-level triadic detections
 
 The downloadable CSV contains both:
+
 1. Summary statistics
 2. Complete event-level triad data
+
+Methodological Scope
+--------------------
+The procedure is intentionally conservative. It analyses onset-defined harmonic
+objects rather than the complete aggregate of sounding pitches. Consequently,
+triadic onset structures may be identified even when additional pitches from
+earlier events continue to sound simultaneously.
+
+The procedure does not attempt to reconstruct functional tonality,
+voice-leading continuity, latent harmonic implications, or inferred harmonic
+relations. It is restricted to explicitly articulated triadic onset structures.
 
 Online Application
 ------------------
