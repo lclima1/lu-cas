@@ -1,9 +1,0 @@
-measure,position,quality,inversion,root,bass,pitches,spellings
-4,beat 3,minor,0,A,A,A3 E4 C5,"('A', 'C', 'E')"
-8,beat 3 + eighth,major,0,B♭,B♭,B♭2 D4 F4,"('B♭', 'D', 'F')"
-9,beat 1 + sixteenth,diminished,1,F♯,A,A2 A2 C4 F♯4,"('A', 'A', 'C', 'F♯')"
-11,beat 1 + sixteenth,diminished,2,F,C♭,C♭3 F3 A♭4,"('A♭', 'C♭', 'F')"
-22,beat 1 + eighth,augmented,2,A♭,E,E4 A♭5 C6,"('A♭', 'C', 'E')"
-22,beat 1 + dotted eighth,diminished,1,A,C,C3 E♭4 A5,"('A', 'C', 'E♭')"
-22,beat 2,augmented,2,C♭,G,G2 C♭6 E♭6,"('C♭', 'E♭', 'G')"
-22,beat 2 + eighth,diminished,1,E,G,G3 B♭4 E5,"('B♭', 'E', 'G')"
