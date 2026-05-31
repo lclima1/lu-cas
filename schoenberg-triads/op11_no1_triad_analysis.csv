@@ -1,0 +1,16 @@
+Summary
+metric,value
+Total triads,5.0
+Triad-event share (%),1.07
+Triads (% of noteheads),0.74
+Root-position triads (% of noteheads),0.0
+Onset events,467.0
+Adjusted notehead count,679.0
+
+Detected Triads
+measure,position,quality,inversion,root,bass,pitches,spellings
+29,beat 2,augmented,2,C,G♯,G♯4 C5 E5,"('C', 'E', 'G♯')"
+30,beat 1 + dotted eighth,augmented,2,C,G♯,G♯4 C5 E5,"('C', 'E', 'G♯')"
+30,beat 3 + sixteenth,augmented,2,B♭,F♯,F♯4 B♭4 D5,"('B♭', 'D', 'F♯')"
+36,beat 1,augmented,2,G♭,D,D3 G♭4 B♭4,"('B♭', 'D', 'G♭')"
+55,beat 2,minor,2,C♯,G♯,G♯4 C♯5 E5,"('C♯', 'E', 'G♯')"
