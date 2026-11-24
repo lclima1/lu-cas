@@ -418,10 +418,11 @@ polygon.tapc:active{fill:rgba(255,138,18,.5)}
 .brandbtn{display:flex;align-items:center;gap:8px}
 .betatag{font:700 13px/1 Nunito,sans-serif;letter-spacing:.06em;text-transform:uppercase;background:var(--yuzu,#ff8a12);color:#fff;border-radius:999px;padding:5px 10px;transform:translateY(4px)}
 .weak.beta{display:grid;gap:14px}
-.weak.beta .card.soon{background:#fff7e8;border:2px dashed #e0b98a}
-.weak.beta .card.mail{background:#e9f7ef;border:2px solid #9fd8b4}
+.weak.beta .card.soon{background:light-dark(#fff7e8,#2a2112);border:2px dashed light-dark(#e0b98a,#8a6a3e)}
+.weak.beta .card.mail{background:light-dark(#e9f7ef,#12281b);border:2px solid light-dark(#9fd8b4,#3b7a52)}
 .weak.beta .addr{font-weight:800;margin-top:6px;word-break:break-all}
 a.btn{text-decoration:none;display:inline-flex;align-items:center;justify-content:center}
+.cnav .bb{flex-wrap:wrap;justify-content:flex-end}
 </style>
 </head>
 <body>
@@ -1351,35 +1352,39 @@ const T = {
         "Viajando, a Capy aprendeu que toda melodia vem de algum lugar: de gente que cantava trabalhando, brincando, resistindo, celebrando. Muitas dessas músicas rodaram o mundo sem o nome de quem as criou. Aqui você aprende primeiro de ouvido, e depois a Capy conta de onde elas vêm."],
 
   /* comic-book intro: caption (c) and speech balloon (b) per panel */
-  c1: ["Capybaras come from South and Central America: Brazil, Argentina, Colombia, Venezuela, Peru, Paraguay, Uruguay, Panama… Their name comes from Tupi, an Indigenous language of Brazil, and means “grass eater”.",
-       "Capybaras kommen aus Süd- und Mittelamerika: Brasilien, Argentinien, Kolumbien, Venezuela, Peru, Paraguay, Uruguay, Panama… Ihr Name stammt aus dem Tupi, einer indigenen Sprache Brasiliens, und bedeutet „Grasfresser“.",
-       "I capibara vengono dal Sud e dal Centro America: Brasile, Argentina, Colombia, Venezuela, Perù, Paraguay, Uruguay, Panama… Il nome viene dal tupi, una lingua indigena del Brasile, e vuol dire «mangiatore d'erba».",
-       "Les capybaras viennent d'Amérique du Sud et d'Amérique centrale : Brésil, Argentine, Colombie, Venezuela, Pérou, Paraguay, Uruguay, Panama… Leur nom vient du tupi, une langue autochtone du Brésil, et veut dire « mangeur d'herbe ».",
-       "As capivaras vêm da América do Sul e da América Central: Brasil, Argentina, Colômbia, Venezuela, Peru, Paraguai, Uruguai, Panamá… O nome vem do tupi, uma língua indígena do Brasil, e quer dizer “comedor de capim”."],
+  c1: ["We capybaras come from South and Central America: Brazil, Argentina, Colombia, Venezuela, Peru, Paraguay, Uruguay, Panama… Our name comes from Tupi, an Indigenous language of Brazil, and means “grass eater”.",
+       "Wir Capybaras kommen aus Süd- und Mittelamerika: Brasilien, Argentinien, Kolumbien, Venezuela, Peru, Paraguay, Uruguay, Panama… Unser Name stammt aus dem Tupi, einer indigenen Sprache Brasiliens, und bedeutet „Grasfresser“.",
+       "Noi capibara veniamo dal Sud e dal Centro America: Brasile, Argentina, Colombia, Venezuela, Perù, Paraguay, Uruguay, Panama… Il nostro nome viene dal tupi, una lingua indigena del Brasile, e vuol dire «mangiatore d'erba».",
+       "Nous, les capybaras, venons d'Amérique du Sud et d'Amérique centrale : Brésil, Argentine, Colombie, Venezuela, Pérou, Paraguay, Uruguay, Panama… Notre nom vient du tupi, une langue autochtone du Brésil, et veut dire « mangeur d'herbe ».",
+       "Nós, capivaras, viemos da América do Sul e da América Central: Brasil, Argentina, Colômbia, Venezuela, Peru, Paraguai, Uruguai, Panamá… Nosso nome vem do tupi, uma língua indígena do Brasil, e quer dizer “comedor de capim”."],
   b1: ["Hi! I'm from the Pantanal!", "Hallo! Ich komme aus dem Pantanal!", "Ciao! Vengo dal Pantanal!", "Salut ! Je viens du Pantanal !", "Oi! Eu sou do Pantanal!"],
-  c2: ["They live near rivers, lakes and swamps. They have webbed toes, swim very well and can stay underwater for up to five minutes.",
-       "Sie leben an Flüssen, Seen und Sümpfen. Sie haben Schwimmhäute zwischen den Zehen, schwimmen super und können bis zu fünf Minuten unter Wasser bleiben.",
-       "Vivono vicino a fiumi, laghi e paludi. Hanno le dita palmate, nuotano benissimo e possono stare sott'acqua fino a cinque minuti.",
-       "Ils vivent près des rivières, des lacs et des marais. Ils ont les doigts palmés, nagent très bien et peuvent rester sous l'eau jusqu'à cinq minutes.",
-       "Vivem perto de rios, lagos e brejos. Têm membrana entre os dedos, nadam muito bem e aguentam até cinco minutos embaixo d'água."],
+  c2: ["We live near rivers, lakes and swamps. We have webbed toes, swim very well and can stay underwater for up to five minutes.",
+       "Wir leben an Flüssen, Seen und Sümpfen. Wir haben Schwimmhäute zwischen den Zehen, schwimmen super und können bis zu fünf Minuten unter Wasser bleiben.",
+       "Viviamo vicino a fiumi, laghi e paludi. Abbiamo le dita palmate, nuotiamo benissimo e possiamo stare sott'acqua fino a cinque minuti.",
+       "Nous vivons près des rivières, des lacs et des marais. Nous avons les doigts palmés, nous nageons très bien et pouvons rester sous l'eau jusqu'à cinq minutes.",
+       "Vivemos perto de rios, lagos e brejos. Temos membrana entre os dedos, nadamos muito bem e aguentamos até cinco minutos embaixo d'água."],
   b2: ["Blub blub!", "Blubb blubb!", "Blub blub!", "Blub blub !", "Blub blub!"],
-  c3: ["They are the largest rodents in the world: an adult weighs 35 to 65 kg, about as much as a grown-up person.",
-       "Sie sind die größten Nagetiere der Welt: Ein erwachsenes Tier wiegt 35 bis 65 kg, ungefähr so viel wie ein erwachsener Mensch.",
-       "Sono i roditori più grandi del mondo: un adulto pesa da 35 a 65 kg, più o meno quanto una persona adulta.",
-       "Ce sont les plus gros rongeurs du monde : un adulte pèse de 35 à 65 kg, à peu près autant qu'une personne adulte.",
-       "São os maiores roedores do mundo: uma capivara adulta pesa de 35 a 65 kg, mais ou menos o mesmo que uma pessoa adulta."],
+  c3: ["We are the largest rodents in the world: an adult weighs 35 to 65 kg, about as much as a grown-up person.",
+       "Wir sind die größten Nagetiere der Welt: Ein erwachsenes Tier wiegt 35 bis 65 kg, ungefähr so viel wie ein erwachsener Mensch.",
+       "Siamo i roditori più grandi del mondo: un adulto pesa da 35 a 65 kg, più o meno quanto una persona adulta.",
+       "Nous sommes les plus gros rongeurs du monde : un adulte pèse de 35 à 65 kg, à peu près autant qu'une personne adulte.",
+       "Somos os maiores roedores do mundo: uma capivara adulta pesa de 35 a 65 kg, mais ou menos o mesmo que uma pessoa adulta."],
   b3: ["It's all fluff!", "Das ist alles nur Fell!", "È tutto pelo!", "C'est que du poil !", "É tudo pelo!"],
-  c4: ["They eat grass and water plants: about 3 kg a day. That's a lot of salad!",
-       "Sie fressen Gras und Wasserpflanzen: etwa 3 kg am Tag. Das ist ganz schön viel Salat!",
-       "Mangiano erba e piante acquatiche: circa 3 kg al giorno. È un sacco di insalata!",
-       "Ils mangent de l'herbe et des plantes aquatiques : environ 3 kg par jour. Ça fait beaucoup de salade !",
-       "Comem capim e plantas aquáticas: uns 3 kg por dia. É muita salada!"],
-  b4: ["Me? I'll stick to oranges.", "Ich? Ich bleib bei Orangen.", "Io? Preferisco le arance.", "Moi ? Je préfère les oranges.", "Eu? Prefiro laranja."],
-  c5: ["They are so calm that birds ride on their backs. In the dry season they live in groups of up to a hundred capybaras.",
-       "Sie sind so entspannt, dass Vögel auf ihrem Rücken mitreiten. In der Trockenzeit leben sie in Gruppen von bis zu hundert Tieren.",
-       "Sono così tranquilli che gli uccellini viaggiano sulla loro schiena. Nella stagione secca vivono in gruppi fino a cento capibara.",
-       "Ils sont si calmes que les oiseaux voyagent sur leur dos. À la saison sèche, ils vivent en groupes qui peuvent atteindre cent capybaras.",
-       "São tão calmas que os passarinhos pegam carona nas costas delas. Na seca, vivem em grupos de até cem capivaras."],
+  c4: ["We eat grass and water plants: about 3 kg a day. That's a lot of salad!",
+       "Wir fressen Gras und Wasserpflanzen: etwa 3 kg am Tag. Das ist ganz schön viel Salat!",
+       "Mangiamo erba e piante acquatiche: circa 3 kg al giorno. È un sacco di insalata!",
+       "Nous mangeons de l'herbe et des plantes aquatiques : environ 3 kg par jour. Ça fait beaucoup de salade !",
+       "Comemos capim e plantas aquáticas: uns 3 kg por dia. É muita salada!"],
+  b4: ["Mmm, fresh grass!",
+       "Mmm, frisches Gras!",
+       "Mmm, erba fresca!",
+       "Miam, de l'herbe fraîche !",
+       "Hmm, capim fresquinho!"],
+  c5: ["We are so calm that birds ride on our backs. In the dry season we live in groups of up to a hundred capybaras.",
+       "Wir sind so entspannt, dass Vögel auf unserem Rücken mitreiten. In der Trockenzeit leben wir in Gruppen von bis zu hundert Tieren.",
+       "Siamo così tranquilli che gli uccellini viaggiano sulla nostra schiena. Nella stagione secca viviamo in gruppi fino a cento capibara.",
+       "Nous sommes si calmes que les oiseaux voyagent sur notre dos. À la saison sèche, nous vivons en groupes qui peuvent atteindre cent capybaras.",
+       "Somos tão calmas que os passarinhos pegam carona nas nossas costas. Na seca, vivemos em grupos de até cem capivaras."],
   b5: ["Next stop: the river!", "Nächster Halt: der Fluss!", "Prossima fermata: il fiume!", "Prochain arrêt : la rivière !", "Próxima parada: o rio!"],
   c6: ["But there's something about me that you don't know…",
        "Aber es gibt etwas über mich, das du nicht weißt…",
@@ -1490,6 +1495,7 @@ const T = {
   next: ["Next", "Weiter", "Avanti", "Suivant", "Próximo"],
   skip: ["Skip intro", "Intro überspringen", "Salta l'intro", "Passer l'intro", "Pular introdução"],
   letsgo: ["Let's go!", "Los geht's!", "Andiamo!", "C'est parti !", "Bora!"],
+  iprev: ["← Back", "← Zurück", "← Indietro", "← Retour", "← Voltar"],
   betaT: ["Enjoying Capy?", "Gefällt dir Capy?", "Ti piace Capy?", "Capy te plaît ?", "Gostou do Capy?"],
   betaP: ["This is a beta version with only the first lessons. If you'd like to use Capy (as a student, a teacher or a school) or want to tell me what you think, write to me.", "Das ist eine Beta-Version mit den ersten Lektionen. Wenn du Capy nutzen möchtest (als Schüler·in, Lehrperson oder Musikschule) oder mir sagen willst, wie du es findest, schreib mir.", "Questa è una versione beta con solo le prime lezioni. Se ti interessa usare Capy (come studente, insegnante o scuola) o vuoi dirmi cosa ne pensi, scrivimi.", "Ceci est une version bêta avec seulement les premières leçons. Si tu veux utiliser Capy (comme élève, enseignant·e ou école) ou me dire ce que tu en penses, écris-moi.", "Esta é uma versão beta, só com as primeiras lições. Se você tem interesse em usar o Capy (como aluno, professor ou escola) ou quer me contar o que achou, me escreva."],
   betaMail: ["Write me an email", "Schreib mir eine E-Mail", "Scrivimi un'email", "Écris-moi un e-mail", "Me escreva um email"],
@@ -1754,7 +1760,7 @@ const ISTEPS = [
   { s: "map", txt: "i0", tap: "tapSA", quiz: 1, bg: "#0b3d63", fg: "#fff3c4" },
   { s: "mapsa", txt: "c1", bub: "b1", bg: "#0b3d63", fg: "#fff3c4" },
   { s: "swim", txt: "c2", bub: "b2", tap: "tapHint", bg: "#14532d", fg: "#f4ffd9" },
-  { s: "scale", txt: "qWeight", quiz: 1, opts: ["5 kg", "15 kg", "35–65 kg", "150 kg"], right: 2, after: "c3", bg: "#6b3a1c", fg: "#ffe9c7" },
+  { s: "scale", txt: "qWeight", quiz: 1, opts: ["5–10 kg", "15–25 kg", "35–65 kg", "100–150 kg"], right: 2, after: "c3", bg: "#6b3a1c", fg: "#ffe9c7" },
   { s: "eat", txt: "c4", bub: "b4", tap: "tapHint", bg: "#2f6b2a", fg: "#f3ffe0" },
   { s: "birds", txt: "c5", bub: "b5", tap: "tapHint", bg: "#1f5f7a", fg: "#e6f7ff" },
   { s: "night", txt: "c6", bub: "b6", tap: "tapHint", bg: "#2a1f5c", fg: "#ffe680" },
@@ -1774,25 +1780,25 @@ function introScene(kind) {
     <path d="M-60 168 Q90 128 200 154 T420 144 T580 138 V360 H-60z" fill="#8fcf72"/>
     <path d="M-60 204 Q130 190 260 202 T580 196 V250 H-60z" fill="#2f95c9"/><path d="M40 214 h40 M170 224 h50 M330 216 h36 M430 226 h44" stroke="#e6f6ff" stroke-opacity=".7" stroke-width="3" stroke-linecap="round"/>
     <path d="M-60 240 Q140 228 280 238 T580 234 V360 H-60z" fill="#4f9e3f"/>${reeds}${tufts([110, 140, 380, 410], 262)}
-    <g transform="translate(166,104) scale(1.2)">${capyG("happy")}</g>`;
+    <g transform="translate(166,104) scale(1.2)">${capyG("happy", true)}</g>`;
   } else if (kind === "mapsa") {
     const P1 = geoXY(-57, -18), P2 = geoXY(-67, 7);
     const sx = p => [p[0] * ZOOM.k + ZOOM.tx, p[1] * ZOOM.k + ZOOM.ty];
     const a = sx(P1), b = sx(P2);
-    const over = `<g class="sapins">${pinSvg(a[0], a[1], "Pantanal", true)}${pinSvg(b[0], b[1], "Llanos", false)}<g transform="translate(${a[0] + 30},${a[1] - 40}) scale(.7)">${capyG("happy")}</g></g>`;
+    const over = `<g class="sapins">${pinSvg(a[0], a[1], "Pantanal", true)}${pinSvg(b[0], b[1], "Llanos", false)}<g transform="translate(${a[0] + 30},${a[1] - 40}) scale(.7)">${capyG("happy", true)}</g></g>`;
     return worldSvg({ zoomed: true, still: true, over, aria: t("c1") });
   } else if (kind === "swim") {
     g = sky("#bfe6ff", "#fff3d4") + `<path d="M-60 150 Q120 120 260 140 T580 132 V360 H-60z" fill="#a3d68d"/>${tufts([30, 60, 470, 500], 168)}
-    <g class="dive"><g transform="translate(176,118)">${capyG("happy")}</g></g>
+    <g class="dive"><g transform="translate(176,118)">${capyG("happy", true)}</g></g>
     <rect x="-60" y="186" width="640" height="180" fill="#2f95c9" opacity=".95"/><path d="M-40 186 q20 -8 40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0" fill="none" stroke="#e6f6ff" stroke-width="3" opacity=".7"/>
     <g class="bubs">${[[300, 176, 6], [318, 156, 8], [292, 136, 10], [330, 118, 7]].map(([x, y, r]) => `<circle cx="${x}" cy="${y}" r="${r}" fill="none" stroke="#e6f6ff" stroke-width="2.6"/>`).join("")}</g>`;
   } else if (kind === "scale") {
     g = sky("#ffe9c7", "#fff7e8") + `<rect x="-60" y="236" width="640" height="120" fill="#e0b98a"/><path d="M-60 236 h640" stroke="#b98d5c" stroke-width="3"/>
     <rect x="150" y="214" width="240" height="34" rx="12" fill="#e9eef2" stroke="#3b2416" stroke-width="3"/><rect x="214" y="219" width="112" height="24" rx="5" fill="#1d2b3a"/>
     <text x="270" y="237" text-anchor="middle" id="kg" style="font:700 17px Fredoka,monospace;fill:#7dffa0">0 kg</text>
-    <g class="hop"><g transform="translate(186,98)">${capyG("happy")}</g></g>`;
+    <g class="hop"><g transform="translate(186,98)">${capyG("happy", true)}</g></g>`;
   } else if (kind === "eat") {
-    g = sky("#c9ecff", "#fff3d4") + meadow + `<g transform="translate(110,128)">${capyG("happy")}</g>
+    g = sky("#c9ecff", "#fff3d4") + meadow + `<g transform="translate(110,128)">${capyG("happy", true)}</g>
     <g class="grass">${tufts([268, 284, 300, 316, 332, 348, 364], 252)}<path d="M270 246 q50 -36 100 0z" fill="#58a948"/></g>
     <g class="kg3"><rect x="296" y="118" width="134" height="40" rx="20" fill="#2f6b2a"/><text x="363" y="145" text-anchor="middle" style="font:700 19px Fredoka,sans-serif;fill:#f3ffe0">${esc(t("kgDay"))}</text></g>`;
   } else if (kind === "birds") {
@@ -1805,15 +1811,15 @@ function introScene(kind) {
     <path d="M-60 230 Q140 214 280 226 T580 220 V360 H-60z" fill="#1f3b2a"/>
     <g transform="translate(20,170) scale(.55)" opacity=".55">${capyG("happy", true)}</g><g transform="translate(410,178) scale(.5)" opacity=".5">${capyG("happy", true)}</g>
     <text x="70" y="168" style="font:700 18px Fredoka,sans-serif;fill:#9fb3ff">z z z</text>
-    <g transform="translate(170,120)">${capyG("neutral")}</g><text x="330" y="118" class="qm" style="font:700 54px Fredoka,sans-serif;fill:#ffe680">?</text>
+    <g transform="translate(170,120)">${capyG("neutral", true)}</g><text x="330" y="118" class="qm" style="font:700 54px Fredoka,sans-serif;fill:#ffe680">?</text>
     <g class="nts">${NOTE(330, 110, "#ffd35c")}${NOTE(360, 80, "#9fe3ff")}${NOTE(392, 120, "#ffd35c")}${NOTE(300, 70, "#ff9cba")}</g>`;
   } else if (kind === "stage") {
     const crowd = [40, 110, 180, 300, 370, 440, 500].map((x, i) => `<g transform="translate(${x},${276 + (i % 2) * 6})"><ellipse cx="0" cy="12" rx="34" ry="20" fill="#5c3a20"/><rect x="18" y="-14" width="30" height="28" rx="12" fill="#6e4426"/><circle cx="28" cy="-14" r="4" fill="#4a2a17"/></g>`).join("");
     g = `<defs><linearGradient id="istg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1b1440"/><stop offset="1" stop-color="#46245e"/></linearGradient><linearGradient id="isp" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff6c8" stop-opacity=".55"/><stop offset="1" stop-color="#fff6c8" stop-opacity="0"/></linearGradient></defs>
     <rect x="-60" y="-60" width="640" height="420" fill="url(#istg)"/><path d="M150 0 L200 0 L330 240 L120 240z" fill="url(#isp)"/><path d="M350 0 L390 0 L420 240 L250 240z" fill="url(#isp)" opacity=".7"/>
     <rect x="-60" y="232" width="640" height="130" fill="#6b3f22"/><rect x="-60" y="232" width="640" height="7" fill="#8a5631"/>
-    <g transform="translate(214,168) rotate(-14)">${GUITAR}</g><g transform="translate(262,142)">${capyG("happy")}</g>
-    <g class="fall">${ORANGE(110, 160, 10)}${ORANGE(420, 190, 9)}${ORANGE(70, 220, 8)}${ORANGE(480, 226, 8)}${ORANGE(170, 222, 9)}</g>${crowd}`;
+    <g transform="translate(214,168) rotate(-14)">${GUITAR}</g><g transform="translate(262,142)">${capyG("happy", true)}</g>
+    <g class="fall">${ORANGE(376, 169, 11)}${ORANGE(110, 160, 10)}${ORANGE(420, 190, 9)}${ORANGE(70, 220, 8)}${ORANGE(480, 226, 8)}${ORANGE(170, 222, 9)}</g>${crowd}`;
   } else return sceneSvg(kind);
   return `<svg viewBox="0 0 520 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true">${g}</svg>`;
 }
@@ -1824,7 +1830,7 @@ function renderIntro(k) {
   <main class="intro"><div class="iscene s-${st.s}" style="--cbg:${st.bg};--cfg:${st.fg}" ${st.tap && st.s !== "map" ? 'data-act="iact"' : ""}><div class="iart">${introScene(st.s)}
     ${st.bub ? `<p class="ibal">${t(st.bub)}</p>` : ""}${st.tap ? `<p class="itap">👆 ${t(st.tap)}</p>` : ""}${st.opts ? `<div class="iopts">${st.opts.map((o, i) => `<button class="iopt" data-act="iquiz" data-i="${i}">${o}</button>`).join("")}</div>` : ""}</div><p class="icap">${t(st.txt)}</p></div>
   <div class="cnav"><div class="dots" aria-hidden="true">${ISTEPS.map((_, j) => `<i class="${j === k ? "on" : ""}"></i>`).join("")}</div>
-  <div class="bb">${last ? "" : `<button class="btn ghost" data-act="skip">${t("skip")}</button>`}<button class="btn" data-act="inext">${t(last ? "letsgo" : "next")}</button></div></div></main>`;
+  <div class="bb">${k > 0 ? `<button class="btn ghost" data-act="iprev">${t("iprev")}</button>` : ""}${last ? "" : `<button class="btn ghost" data-act="skip">${t("skip")}</button>`}<button class="btn" data-act="inext">${t(last ? "letsgo" : "next")}</button></div></div></main>`;
   const b = app.querySelector('[data-act="inext"]'); if (b) b.focus();
 }
 function introAct() {
@@ -2637,6 +2643,7 @@ const ACT = {
   readaloud: () => { if (Voice.busy()) return Voice.stop(); if (!P.settings.voice) { P.settings.voice = true; saveP(); } Voice.say(screenTexts, true); },
   inext: () => { const st = ISTEPS[IK]; if (st.s === "map" && !IANS) return zoomToSA(); if (st.opts && !IANS) return answerQuiz(st.right); if (IK < ISTEPS.length - 1) renderIntro(IK + 1); else { setupInst = null; renderSetup(); } window.scrollTo(0, 0); },
   sa: () => zoomToSA(),
+  iprev: () => { if (IK > 0) { renderIntro(IK - 1); window.scrollTo(0, 0); } },
   land: b => { if (IANS) return; const tp = app.querySelector(".itap"); b.classList.add("no"); setTimeout(() => b.classList.remove("no"), 900);
     if (tp) { tp.textContent = "🤔 " + t("notHere"); tp.className = "itap no"; void tp.offsetWidth; tp.classList.add("shake"); } },
   iquiz: b => answerQuiz(+b.dataset.i),
